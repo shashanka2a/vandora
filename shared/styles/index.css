@@ -6,8 +6,9 @@
 :root {
 	--background: #f8f8f8;
 	--foreground: #131f11;
-	--color-primary-saffron: #f6d045;
-	--color-primary-emeraid: #47c163;
+	/* Vandora palette */
+	--color-primary-saffron: #f2a154; /* Golden Hour */
+	--color-primary-emeraid: #8b9e7d; /* Sage Green */
 	--color-primary-deepgreen: #0d645b;
 	--color-achromatic-900: #0e220e;
 	--color-achromatic-300: #a7b5a7;
