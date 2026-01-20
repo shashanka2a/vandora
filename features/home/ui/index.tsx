@@ -43,7 +43,6 @@ const HomePageMain = () => {
 							className='bg-primary-saffron'
 							label='See a Demo'
 							labelColor='var(--color-achromatic-900)'
-							labelClassName='w-[100px]'
 						/>
 					</div>
 				</div>

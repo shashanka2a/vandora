@@ -1,5 +1,6 @@
 import Icon from '@/shared/assets/icons'
 import BI from '@/shared/assets/icons/logo/BI'
+import Solidroad from '@/shared/assets/icons/logo/Solidroad'
 import { IconNames } from '@/shared/constants/enums'
 import GoButton from '../button/GoButton'
 import GNB from './GNB'
@@ -25,17 +26,14 @@ const Header = () => {
 					/>
 					<div className='xy-center absolute flex items-center gap-1'>
 						<BI width={38} />
+						<Solidroad width={100} />
 					</div>
 					<div>
 						<GNB />
 					</div>
 					<div className='flex items-center gap-x-4'>
 						<div className='px-3 py-1 text-[15px]'>Sign in</div>
-						<GoButton
-							className='bg-primary-emeraid'
-							label='See a Demo'
-							labelClassName='w-[100px]'
-						/>
+						<GoButton className='bg-primary-emeraid' label='See a Demo' />
 					</div>
 				</div>
 			</div>

@@ -5,13 +5,11 @@ import { FC, HTMLAttributes } from 'react'
 type Props = HTMLAttributes<HTMLButtonElement> & {
 	label: string
 	labelColor?: string
-	labelClassName?: string
 }
 const GoButton: FC<Props> = ({
 	className,
 	label,
 	labelColor = 'var(--color-achromatic-0)',
-	labelClassName,
 	...props
 }) => {
 	return (
@@ -21,9 +19,7 @@ const GoButton: FC<Props> = ({
 				className || '',
 			].join(' ')}
 			{...props}>
-			<div
-				style={{ color: labelColor }}
-				className={['font-medium', labelClassName || ''].join(' ')}>
+			<div style={{ color: labelColor }} className={'font-medium'}>
 				{label}
 			</div>
 			<div className='bg-achromatic-0/14 flex size-6 items-center justify-center rounded-full'>
