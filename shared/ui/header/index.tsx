@@ -1,6 +1,4 @@
 import Icon from '@/shared/assets/icons'
-import BI from '@/shared/assets/icons/logo/BI'
-import Solidroad from '@/shared/assets/icons/logo/Solidroad'
 import { IconNames } from '@/shared/constants/enums'
 import GoButton from '../button/GoButton'
 import GNB from './GNB'
@@ -24,16 +22,20 @@ const Header = () => {
 						width={16}
 						className='absolute top-0 -right-4 z-10 rotate-180'
 					/>
-					<div className='xy-center absolute flex items-center gap-1'>
-						<BI width={38} />
-						<Solidroad width={100} />
+					<div className='xy-center absolute flex items-center gap-2'>
+						<div className='text-[18px] font-semibold tracking-tight text-achromatic-900'>
+							Vandora
+						</div>
+						<div className='rounded-full bg-achromatic-900/8 px-2 py-1 text-[11px] font-medium text-achromatic-900/70'>
+							Invite-only
+						</div>
 					</div>
 					<div>
 						<GNB />
 					</div>
 					<div className='flex items-center gap-x-4'>
 						<div className='px-3 py-1 text-[15px]'>Sign in</div>
-						<GoButton className='bg-primary-emeraid' label='See a Demo' />
+						<GoButton className='bg-primary-emeraid' label='Request invite' />
 					</div>
 				</div>
 			</div>

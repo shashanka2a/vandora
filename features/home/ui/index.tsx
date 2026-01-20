@@ -3,10 +3,10 @@ import { IconNames } from '@/shared/constants/enums'
 import Marquee from '@/shared/ui/animation/Marquee'
 import GoButton from '@/shared/ui/button/GoButton'
 
-const TITLE = ['Train and QA your', 'human and AI agents']
+const TITLE = ['A trusted community for', 'van-lifers to connect']
 const SUBTITLE = [
-	'Make every customer interaction better, faster, and more consistent',
-	'with the optimization platform for human and AI agents.',
+	'Date other nomads. Meet friends through shared activities.',
+	'Get trusted builder help—invite-only, with verification built in.',
 ]
 
 const HomePageMain = () => {
@@ -36,29 +36,32 @@ const HomePageMain = () => {
 						<input
 							name='email'
 							type='text'
-							placeholder='Email address'
+							placeholder='Email address (request an invite)'
 							className='w-[240px] border-none bg-transparent outline-none'
 						/>
 						<GoButton
 							className='bg-primary-saffron'
-							label='See a Demo'
+							label='Request invite'
 							labelColor='var(--color-achromatic-900)'
 						/>
 					</div>
+				</div>
+				<div className='mx-auto mt-4 max-w-[620px] text-[13px] leading-[150%] text-achromatic-0/80'>
+					Invite-only to keep the community safe and intentional—especially for solo travelers.
 				</div>
 			</div>
 			<div className='absolute bottom-[8%] left-0 w-full'>
 				<Marquee baseVelocity={-0.4} repeatCount={2}>
 					<div className='flex items-center gap-x-20 text-[40px]'>
-						<span>FINOM</span>
-						<span>amenitiz</span>
-						<span>fever</span>
-						<span>faire</span>
-						<span>activeCamaign</span>
-						<span>WorkWhile</span>
-						<span>crypto.com</span>
-						<span>Podium</span>
-						<span>RYANAIR</span>
+						<span>Climbing</span>
+						<span>Hiking</span>
+						<span>Skiing</span>
+						<span>Snowboarding</span>
+						<span>Surfing</span>
+						<span>Build nights</span>
+						<span>Trailheads</span>
+						<span>Campfires</span>
+						<span>Route buddies</span>
 					</div>
 				</Marquee>
 			</div>

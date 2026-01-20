@@ -1,4 +1,5 @@
 import HomePageMain from '@/features/home/ui'
+import VandoraSections from '@/features/home/ui/VandoraSections'
 import VisualBg from '@/features/home/ui/VisualBg'
 import Header from '@/shared/ui/header'
 
@@ -12,6 +13,7 @@ const HomePage = () => {
 					<HomePageMain />
 				</div>
 			</div>
+			<VandoraSections />
 		</>
 	)
 }

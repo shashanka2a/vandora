@@ -6,9 +6,9 @@ import type { Metadata } from 'next'
 import { type ReactNode } from 'react'
 
 export const metadata: Metadata = {
-	title: 'Solidroad | AI Optimization for Human and AI Agents',
+	title: 'Vandora | A trusted community for van-lifers',
 	description:
-		'The Automated Quality Management platform that optimizes human and AI agents to make every customer interaction better, faster, and more consistent. ',
+		'Vandora is an invite-only, safety-first community for van-lifers to date other nomads, find friends by shared activities, and get trusted builder help for van projects.',
 }
 
 interface RootLayoutProps {
