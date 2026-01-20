@@ -2,8 +2,8 @@ import GoButton from '@/shared/ui/button/GoButton'
 
 const VandoraSections = () => {
 	return (
-		<div className='mx-auto max-w-[1200px] px-4 pb-24 pt-18'>
-			<section className='rounded-[36px] bg-achromatic-0 p-8 shadow-sm md:p-12'>
+		<div className='mx-auto max-w-[1440px] px-4 pb-24 pt-20'>
+			<section className='rounded-[44px] bg-achromatic-0 p-8 shadow-sm md:p-12'>
 				<div className='grid gap-10 md:grid-cols-2 md:items-start'>
 					<div>
 						<div className='text-[13px] font-medium tracking-[0.12em] text-achromatic-900/55'>
@@ -60,7 +60,7 @@ const VandoraSections = () => {
 				</div>
 			</section>
 
-			<section className='mt-8 rounded-[36px] bg-primary-deepgreen p-8 text-achromatic-0 shadow-sm md:p-12'>
+			<section className='mt-8 rounded-[44px] bg-primary-deepgreen p-8 text-achromatic-0 shadow-sm md:p-12'>
 				<div className='grid gap-10 md:grid-cols-2 md:items-start'>
 					<div>
 						<div className='text-[13px] font-medium tracking-[0.12em] text-achromatic-0/60'>
