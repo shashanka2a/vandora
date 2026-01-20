@@ -1,0 +1,16 @@
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-primary-saffron: var(--color-primary-saffron);
+	--color-primary-emeraid: var(--color-primary-emeraid);
+	--color-primary-deepgreen: var(--color-primary-deepgreen);
+	--color-achromatic-900: var(--color-achromatic-900);
+	--color-achromatic-300: var(--color-achromatic-300);
+	--color-achromatic-0: var(--color-achromatic-0);
+	--color-input: var(--color-input);
+	--color-input-placeholder: var(--color-input-placeholder);
+
+	--height-viewport: calc(var(--vh, 1vh) * 100);
+	--min-height-viewport: calc(var(--vh, 1vh) * 100);
+	--max-height-viewport: calc(var(--vh, 1vh) * 100);
+}

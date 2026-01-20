@@ -1,0 +1,19 @@
+@layer utilities {
+	.xy-center {
+		@apply top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+	}
+	.x-center {
+		@apply left-1/2 -translate-x-1/2;
+	}
+	.y-center {
+		@apply top-1/2 -translate-y-1/2;
+	}
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+}

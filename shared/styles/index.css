@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+@import './theme.css';
+@import './media.css';
+@import './utilities.css';
+
+:root {
+	--background: #f8f8f8;
+	--foreground: #131f11;
+	--color-primary-saffron: #f6d045;
+	--color-primary-emeraid: #47c163;
+	--color-primary-deepgreen: #0d645b;
+	--color-achromatic-900: #0e220e;
+	--color-achromatic-300: #a7b5a7;
+	--color-achromatic-0: #ffffff;
+	--color-input: var(--color-achromatic-900);
+	--color-input-placeholder: #0e220e66;
+}
+
+@layer base {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html body {
+		font-family: 'Pretendard', sans-serif;
+		-webkit-text-size-adjust: none;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0.05);
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration-color: var(--foreground);
+	}
+
+	i,
+	em {
+		font-style: normal;
+	}
+
+	input,
+	button,
+	select,
+	option,
+	textarea {
+		font-size: 1rem;
+		font-family: 'Pretendard', sans-serif;
+		-webkit-appearance: none;
+		appearance: none;
+		-webkit-border-radius: 0;
+		color: var(--color-input);
+	}
+
+	input::placeholder,
+	button::placeholder,
+	select::placeholder,
+	option::placeholder,
+	textarea::placeholder {
+		font-size: inherit;
+		font-weight: inherit;
+		color: var(--color-input-placeholder);
+		font-family: 'Pretendard', sans-serif;
+	}
+
+	img {
+		display: block;
+		width: 100%;
+		font-size: 0;
+		border: none;
+	}
+}
