@@ -5,7 +5,7 @@ import GoButton from '@/shared/ui/button/GoButton'
 
 const TITLE = ['Meet people who', 'actually get van life']
 const SUBTITLE = [
-	'Dating and making friends is hard when you're always moving.',
+	"Dating and making friends is hard when you're always moving.",
 	'Vandora is designed for nomads—so matches are based on routes, shared activities, and intent.',
 ]
 
