@@ -1,41 +1,21 @@
 <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="vanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#F2A154" stop-opacity="1" />
-      <stop offset="100%" stop-color="#0d645b" stop-opacity="0.85" />
-    </linearGradient>
-    <linearGradient id="communityCircle" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d645b" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#F2A154" stop-opacity="0.25" />
+      <stop offset="0%" stop-color="#F2A154" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0d645b" stop-opacity="0.7" />
     </linearGradient>
   </defs>
   
-  <!-- Background circle - represents community -->
-  <circle cx="100" cy="100" r="85" fill="url(#communityCircle)" />
-  
-  <!-- Main van body -->
-  <g transform="translate(50, 80)">
+  <!-- Simple van illustration -->
+  <g transform="translate(50, 75)">
     <!-- Van body -->
     <rect x="0" y="0" width="100" height="50" rx="5" fill="url(#vanGradient)" />
     
     <!-- Window -->
-    <rect x="10" y="10" width="35" height="22" rx="3" fill="#E0F2FE" opacity="0.95" />
-    
-    <!-- Roof rack -->
-    <rect x="5" y="-10" width="90" height="10" rx="3" fill="#0d645b" opacity="0.65" />
+    <rect x="10" y="10" width="35" height="22" rx="3" fill="#E0F2FE" opacity="0.9" />
     
     <!-- Wheels -->
-    <circle cx="20" cy="50" r="10" fill="#0d645b" opacity="0.75" />
-    <circle cx="80" cy="50" r="10" fill="#0d645b" opacity="0.75" />
+    <circle cx="20" cy="50" r="8" fill="#0d645b" opacity="0.6" />
+    <circle cx="80" cy="50" r="8" fill="#0d645b" opacity="0.6" />
   </g>
-  
-  <!-- Connection dots - representing community connections -->
-  <circle cx="40" cy="60" r="4" fill="#0d645b" opacity="0.5" />
-  <circle cx="160" cy="60" r="4" fill="#0d645b" opacity="0.5" />
-  <circle cx="40" cy="140" r="4" fill="#0d645b" opacity="0.5" />
-  <circle cx="160" cy="140" r="4" fill="#0d645b" opacity="0.5" />
-  
-  <!-- Subtle connection lines -->
-  <path d="M 40 60 Q 100 50, 160 60" stroke="#0d645b" stroke-width="2" fill="none" opacity="0.35" stroke-dasharray="3,3" />
-  <path d="M 40 140 Q 100 150, 160 140" stroke="#0d645b" stroke-width="2" fill="none" opacity="0.35" stroke-dasharray="3,3" />
 </svg>
