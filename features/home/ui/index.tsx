@@ -11,7 +11,7 @@ const SUBTITLE = [
 
 const HomePageMain = () => {
 	return (
-		<div className='h-[85vh] relative'>
+		<div className='h-[85vh] relative overflow-hidden'>
 			{/* Hero Illustration */}
 			<div className='absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none'>
 				<div className='relative w-full h-full'>
@@ -19,24 +19,24 @@ const HomePageMain = () => {
 						src='/images/hero.png'
 						alt='Van life landscape illustration'
 						fill
-						className='object-cover opacity-50'
+						className='object-cover opacity-80'
 						priority
 					/>
 				</div>
 			</div>
 			<div className='text-achromatic-0 xy-center absolute text-center z-10 px-4 w-full max-w-[1000px]'>
-				<div className='mb-3 text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] leading-[110%] font-bold tracking-tight'>
+				<div className='mb-3 text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] leading-[110%] font-bold tracking-tight drop-shadow-lg'>
 					{TITLE.map((title, idx) => (
-						<h1 key={idx}>{title}</h1>
+						<h1 key={idx} className='drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]'>{title}</h1>
 					))}
 				</div>
-				<div className='text-[14px] sm:text-[16px] md:text-[18px] lg:text-[19px] leading-[130%] tracking-[-0.02em]'>
+				<div className='text-[14px] sm:text-[16px] md:text-[18px] lg:text-[19px] leading-[130%] tracking-[-0.02em] drop-shadow-md'>
 					{SUBTITLE.map((subtitle, idx) => (
-						<p key={idx}>{subtitle}</p>
+						<p key={idx} className='drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]'>{subtitle}</p>
 					))}
 				</div>
 				<div className='mt-12 flex justify-center'>
-					<div className='bg-achromatic-0 flex items-center rounded-2xl p-1 max-w-[600px] w-full mx-4'>
+					<div className='bg-achromatic-0 flex items-center rounded-2xl p-1 max-w-[600px] w-full mx-4 shadow-xl'>
 						<div className='px-3 flex-shrink-0'>
 							<Icon
 								name={IconNames.MAIL}

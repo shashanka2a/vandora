@@ -9,7 +9,7 @@ const HomePage = () => {
 	return (
 		<>
 			<Header />
-			<div className='relative'>
+			<div className='relative overflow-hidden'>
 				<VisualBg />
 				<div className='p-4'>
 					<HomePageMain />

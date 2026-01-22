@@ -28,13 +28,13 @@ const TilesSection = () => {
 			</div>
 			<div className='mx-auto grid max-w-[1100px] gap-6 sm:grid-cols-2'>
 				<div className='rounded-[34px] bg-achromatic-0 p-8 shadow-sm min-h-[500px]'>
-					<div className='mb-7'>
+					<div className='mb-7 relative overflow-hidden rounded-[26px] bg-gradient-to-br from-primary-saffron/10 to-primary-emeraid/5 h-[200px] flex items-center justify-center'>
 						<Image
-							alt=''
-							src='/images/tile-cx.svg'
-							width={420}
-							height={320}
-							className='h-[200px] w-full rounded-[26px] object-contain'
+							alt='Vandora community icon'
+							src='/images/vandora-icon.svg'
+							width={200}
+							height={200}
+							className='opacity-100'
 						/>
 					</div>
 					<div className='text-[28px] leading-[120%] font-semibold tracking-tight text-achromatic-900'>
