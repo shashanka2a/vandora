@@ -17,15 +17,24 @@ const TilesSection = () => {
 
 	return (
 		<section className='mx-auto max-w-[1440px] px-4 pb-24'>
+			<div className='mx-auto max-w-[1000px] text-center mb-12 md:mb-16'>
+				<h2 className='text-balance text-[32px] leading-[112%] font-semibold tracking-tight text-achromatic-900 md:text-[40px]'>
+					Built for the van life community
+				</h2>
+				<p className='mx-auto mt-5 max-w-[760px] text-pretty text-[16px] leading-[170%] text-achromatic-900/70 md:text-[18px]'>
+					Vandora is designed by and for van-lifers who understand the unique challenges
+					and joys of life on the road.
+				</p>
+			</div>
 			<div className='mx-auto grid max-w-[1100px] gap-6 sm:grid-cols-2'>
-				<div className='rounded-[34px] bg-achromatic-0 p-8 shadow-sm'>
+				<div className='rounded-[34px] bg-achromatic-0 p-8 shadow-sm min-h-[500px]'>
 					<div className='mb-7'>
 						<Image
 							alt=''
 							src='/images/tile-cx.svg'
 							width={420}
 							height={320}
-							className='h-[160px] w-full rounded-[26px] object-cover'
+							className='h-[200px] w-full rounded-[26px] object-contain'
 						/>
 					</div>
 					<div className='text-[28px] leading-[120%] font-semibold tracking-tight text-achromatic-900'>
@@ -37,14 +46,53 @@ const TilesSection = () => {
 					</p>
 				</div>
 
-				<div className='overflow-hidden rounded-[34px] bg-achromatic-0 shadow-sm'>
-					<Image
-						alt=''
-						src='/images/tiles-landscape.svg'
-						width={900}
-						height={900}
-						className='h-full w-full object-cover'
-					/>
+				<div className='overflow-hidden rounded-[34px] bg-achromatic-0 shadow-sm relative min-h-[500px]'>
+					<svg
+						width='100%'
+						height='100%'
+						viewBox='0 0 534 400'
+						className='absolute inset-0'
+						preserveAspectRatio='xMidYMid cover'>
+						<defs>
+							<linearGradient id='landscapeGradient' x1='0%' y1='0%' x2='0%' y2='100%'>
+								<stop offset='0%' stopColor='#0d645b' stopOpacity='0.1' />
+								<stop offset='50%' stopColor='#8b9e7d' stopOpacity='0.15' />
+								<stop offset='100%' stopColor='#0d645b' stopOpacity='0.1' />
+							</linearGradient>
+						</defs>
+						{/* Background */}
+						<rect width='534' height='400' fill='url(#landscapeGradient)' />
+						{/* Mountains silhouette */}
+						<polygon
+							points='0,300 100,200 200,250 300,180 400,220 534,200 534,400 0,400'
+							fill='#0d645b'
+							opacity='0.2'
+						/>
+						{/* Trees */}
+						<g opacity='0.25'>
+							<polygon points='80,350 90,280 100,350' fill='#0d645b' />
+							<polygon points='120,360 125,300 130,360' fill='#0d645b' />
+							<polygon points='150,355 155,290 160,355' fill='#0d645b' />
+							<polygon points='380,355 385,290 390,355' fill='#0d645b' />
+							<polygon points='420,360 425,300 430,360' fill='#0d645b' />
+							<polygon points='450,350 460,280 470,350' fill='#0d645b' />
+						</g>
+						{/* Van silhouette */}
+						<g transform='translate(200, 320)'>
+							<rect x='0' y='0' width='60' height='35' rx='3' fill='#F2A154' opacity='0.3' />
+							<rect x='5' y='5' width='20' height='15' rx='2' fill='#0d645b' opacity='0.4' />
+							<circle cx='15' cy='35' r='5' fill='#0d645b' opacity='0.4' />
+							<circle cx='45' cy='35' r='5' fill='#0d645b' opacity='0.4' />
+						</g>
+						{/* Road path */}
+						<path
+							d='M 0 380 Q 150 360, 267 340 Q 400 320, 534 300'
+							stroke='#F2A154'
+							strokeWidth='25'
+							fill='none'
+							opacity='0.2'
+						/>
+					</svg>
 				</div>
 
 				<div className='rounded-[34px] bg-primary-saffron/22 p-8 shadow-sm'>
@@ -61,7 +109,7 @@ const TilesSection = () => {
 						Engineered for safety
 					</div>
 					<p className='mt-3 text-[14px] leading-[170%] text-achromatic-900/70'>
-						Invite-only access, verification, and community standards—built to keep
+						Invite-only access, verification, and community standards built to keep
 						Vandora intentional, especially for solo travelers.
 					</p>
 				</div>
@@ -87,7 +135,7 @@ const TilesSection = () => {
 						van build
 					</div>
 					<p className='mt-3 text-[14px] leading-[170%] text-achromatic-900/70'>
-						Get builder help when you need it most—through vetted helpers and paid
+						Get builder help when you need it most through vetted helpers and paid
 						sessions that respect your time and budget.
 					</p>
 				</div>

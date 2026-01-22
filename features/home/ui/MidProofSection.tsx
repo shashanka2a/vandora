@@ -9,7 +9,7 @@ const MidProofSection = () => {
 					<span className='text-achromatic-900'>
 						raise the bar for how van-lifers connect
 					</span>
-					—combining{' '}
+					, combining{' '}
 					<span className='text-achromatic-900 font-semibold'>
 						nomadic dating
 					</span>

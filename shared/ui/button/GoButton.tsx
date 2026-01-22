@@ -17,19 +17,20 @@ const GoButton: FC<Props> = ({
 	return (
 		<button
 			className={[
-				'text-achromatic-0 flex h-12 items-center gap-x-2 rounded-xl px-4',
+				'text-achromatic-0 flex h-10 md:h-12 items-center gap-x-1 md:gap-x-2 rounded-xl px-3 md:px-4',
 				className || '',
 			].join(' ')}
 			{...props}>
 			<div
 				style={{ color: labelColor }}
-				className={['font-medium', labelClassName || ''].join(' ')}>
+				className={['font-medium whitespace-nowrap', labelClassName || ''].join(' ')}>
 				{label}
 			</div>
-			<div className='bg-achromatic-0/14 flex size-6 items-center justify-center rounded-full'>
+			<div className='bg-achromatic-0/14 flex size-5 md:size-6 items-center justify-center rounded-full'>
 				<Icon
 					name={IconNames.ARROW2}
-					width={16}
+					width={14}
+					height={14}
 					fill={labelColor}
 					className='rotate-90'
 				/>

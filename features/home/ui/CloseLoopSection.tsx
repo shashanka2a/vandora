@@ -14,7 +14,7 @@ const CloseLoopSection = () => {
 			eyebrow: 'Nomadic dating',
 			title: 'Date people who are actually on the move.',
 			description:
-				'Match on travel intent, pace, and routes—so "where are you headed?" is built into the experience.',
+				'Match on travel intent, pace, and routes, so "where are you headed?" is built into the experience.',
 			toneClassName: 'bg-primary-saffron/22',
 			visual: (
 				<div className='relative h-[190px] overflow-hidden rounded-[26px] bg-achromatic-0/70 shadow-sm'>
@@ -41,7 +41,7 @@ const CloseLoopSection = () => {
 			eyebrow: 'Friends',
 			title: 'Find friends through shared activities.',
 			description:
-				'Meet people for climbing, hiking, skiing, surfing—whatever your road season looks like.',
+				'Meet people for climbing, hiking, skiing, surfing, whatever your road season looks like.',
 			toneClassName: 'bg-primary-emeraid/20',
 			visual: (
 				<div className='relative h-[190px] overflow-hidden rounded-[26px] bg-achromatic-0/70 shadow-sm'>
@@ -54,13 +54,13 @@ const CloseLoopSection = () => {
 						<div className='mt-4 space-y-3'>
 							<div className='flex items-center justify-between rounded-2xl bg-achromatic-0 px-4 py-3 shadow-[0_1px_0_rgba(14,34,14,0.06)]'>
 								<div className='text-[13px] font-medium text-achromatic-900'>
-									Hike — sunrise loop
+									Hike - sunrise loop
 								</div>
 								<div className='text-[12px] text-achromatic-900/60'>Tomorrow</div>
 							</div>
 							<div className='flex items-center justify-between rounded-2xl bg-achromatic-0 px-4 py-3 shadow-[0_1px_0_rgba(14,34,14,0.06)]'>
 								<div className='text-[13px] font-medium text-achromatic-900'>
-									Climb — boulders
+									Climb - boulders
 								</div>
 								<div className='text-[12px] text-achromatic-900/60'>This weekend</div>
 							</div>
@@ -101,11 +101,11 @@ const CloseLoopSection = () => {
 	return (
 		<section id='contents' className='mx-auto max-w-[1440px] px-4 pb-24 pt-20'>
 			<div className='mx-auto max-w-[1000px] text-center'>
-				<h2 className='text-balance text-[40px] leading-[112%] font-semibold tracking-tight text-achromatic-900 md:text-[52px]'>
-					Close the loop from plans to real connections
+				<h2 className='text-balance text-[32px] leading-[112%] font-semibold tracking-tight text-achromatic-900 md:text-[40px]'>
+					Turn your travel plans into real connections
 				</h2>
 				<p className='mx-auto mt-5 max-w-[760px] text-pretty text-[16px] leading-[170%] text-achromatic-900/70 md:text-[18px]'>
-					Vandora helps van-lifers meet intentionally—by aligning on movement, shared
+					Vandora helps van-lifers meet intentionally by aligning on movement, shared
 					activities, and a safety-first community standard.
 				</p>
 			</div>

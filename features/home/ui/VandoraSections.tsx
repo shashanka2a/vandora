@@ -14,7 +14,7 @@ const VandoraSections = () => {
 						</h2>
 						<p className='mt-4 text-pretty text-[16px] leading-[165%] text-achromatic-900/70'>
 							Dating and making friends is hard when you’re always moving. Vandora is
-							designed for nomads—so matches are based on routes, shared activities,
+							designed for nomads, so matches are based on routes, shared activities,
 							and intent (not just who’s within five miles of a zip code).
 						</p>
 						<div className='mt-7 flex flex-col gap-3 sm:flex-row'>
@@ -29,7 +29,7 @@ const VandoraSections = () => {
 								Nomadic dating
 							</div>
 							<p className='mt-2 text-[14px] leading-[165%] text-achromatic-900/70'>
-								Find people who want to travel too—aligned on pace, style, and season.
+								Find people who want to travel too, aligned on pace, style, and season.
 							</p>
 						</div>
 						<div className='rounded-3xl bg-primary-saffron/20 p-6'>
@@ -47,7 +47,7 @@ const VandoraSections = () => {
 										Builder help (paid)
 									</div>
 									<p className='mt-2 text-[14px] leading-[165%] text-achromatic-900/70'>
-										Get trusted guidance on your build—from electrical to plumbing—
+										Get trusted guidance on your build, from electrical to plumbing,
 										with vetted helpers and clear expectations.
 									</p>
 								</div>
@@ -67,7 +67,7 @@ const VandoraSections = () => {
 							SAFETY-FIRST
 						</div>
 						<h3 className='mt-4 text-balance text-[32px] leading-[112%] font-semibold tracking-tight md:text-[40px]'>
-							Invite-only and verified access—by default
+							Invite-only and verified access by default
 						</h3>
 						<p className='mt-4 text-pretty text-[15px] leading-[170%] text-achromatic-0/75'>
 							Van life is a small, protective community. Vandora is designed to keep
@@ -91,7 +91,7 @@ const VandoraSections = () => {
 						<div className='rounded-3xl bg-achromatic-0/10 p-5'>
 							<div className='text-[14px] font-semibold'>Intent matters</div>
 							<div className='mt-1 text-[14px] text-achromatic-0/75'>
-								Match on where you’re headed and what you’re into—not just proximity.
+								Match on where you’re headed and what you’re into, not just proximity.
 							</div>
 						</div>
 					</div>
