@@ -11,7 +11,7 @@ const SUBTITLE = [
 
 const HomePageMain = () => {
 	return (
-		<div className='h-[85vh] relative overflow-hidden'>
+		<div className='h-[85vh] relative overflow-hidden w-full'>
 			{/* Hero Illustration */}
 			<div className='absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none'>
 				<div className='relative w-full h-full'>
@@ -24,7 +24,7 @@ const HomePageMain = () => {
 					/>
 				</div>
 			</div>
-			<div className='text-achromatic-0 xy-center absolute text-center z-10 px-4 w-full max-w-[1000px]'>
+			<div className='text-achromatic-0 xy-center absolute text-center z-10 px-4 w-full max-w-[1000px] left-1/2 -translate-x-1/2'>
 				<div className='mb-3 text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] leading-[110%] font-bold tracking-tight drop-shadow-lg'>
 					{TITLE.map((title, idx) => (
 						<h1 key={idx} className='drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]'>{title}</h1>

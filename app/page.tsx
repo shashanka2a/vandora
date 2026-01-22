@@ -9,11 +9,9 @@ const HomePage = () => {
 	return (
 		<>
 			<Header />
-			<div className='relative overflow-hidden'>
+			<div className='relative overflow-hidden w-full'>
 				<VisualBg />
-				<div className='p-4'>
-					<HomePageMain />
-				</div>
+				<HomePageMain />
 			</div>
 			<CloseLoopSection />
 			<TilesSection />
