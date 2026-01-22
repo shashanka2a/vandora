@@ -1,6 +1,5 @@
 import Icon from '@/shared/assets/icons'
 import { IconNames } from '@/shared/constants/enums'
-import Marquee from '@/shared/ui/animation/Marquee'
 import GoButton from '@/shared/ui/button/GoButton'
 import Image from 'next/image'
 
@@ -12,7 +11,7 @@ const SUBTITLE = [
 
 const HomePageMain = () => {
 	return (
-		<div className='min-h-viewport relative'>
+		<div className='h-[85vh] relative'>
 			{/* Hero Illustration */}
 			<div className='absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none'>
 				<div className='relative w-full h-full'>
@@ -60,15 +59,6 @@ const HomePageMain = () => {
 						/>
 					</div>
 				</div>
-			</div>
-			<div className='absolute bottom-[6%] left-0 w-full'>
-				<Marquee baseVelocity={-0.4} repeatCount={2}>
-					<div className='flex items-center gap-x-20 text-[40px]'>
-						<span>Climbing</span>
-						<span>Hiking</span>
-						<span>Skiing</span>
-					</div>
-				</Marquee>
 			</div>
 		</div>
 	)
