@@ -26,7 +26,7 @@ const Header = () => {
 						<div className='text-[18px] font-semibold tracking-tight text-achromatic-900'>
 							Vandora
 						</div>
-						<div className='rounded-full bg-achromatic-900/8 px-2 py-1 text-[11px] font-medium text-achromatic-900/70'>
+						<div className='rounded-full bg-primary-emeraid/20 px-2.5 py-0.5 text-[11px] font-medium text-primary-emeraid'>
 							Invite-only
 						</div>
 					</div>

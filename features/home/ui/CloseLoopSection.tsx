@@ -14,7 +14,7 @@ const CloseLoopSection = () => {
 			eyebrow: 'Nomadic dating',
 			title: 'Date people who are actually on the move.',
 			description:
-				'Match on travel intent, pace, and routes—so “where are you headed?” is built into the experience.',
+				'Match on travel intent, pace, and routes—so "where are you headed?" is built into the experience.',
 			toneClassName: 'bg-primary-saffron/22',
 			visual: (
 				<div className='relative h-[190px] overflow-hidden rounded-[26px] bg-achromatic-0/70 shadow-sm'>
@@ -99,7 +99,7 @@ const CloseLoopSection = () => {
 	]
 
 	return (
-		<section className='mx-auto max-w-[1440px] px-4 pb-24 pt-20'>
+		<section id='contents' className='mx-auto max-w-[1440px] px-4 pb-24 pt-20'>
 			<div className='mx-auto max-w-[1000px] text-center'>
 				<h2 className='text-balance text-[40px] leading-[112%] font-semibold tracking-tight text-achromatic-900 md:text-[52px]'>
 					Close the loop from plans to real connections
@@ -141,4 +141,3 @@ const CloseLoopSection = () => {
 }
 
 export default CloseLoopSection
-

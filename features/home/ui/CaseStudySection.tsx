@@ -1,9 +1,11 @@
 'use client'
 
+import BI from '@/shared/assets/icons/logo/BI'
 import Icon from '@/shared/assets/icons'
 import { IconNames } from '@/shared/constants/enums'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useMemo, useState } from 'react'
+import Image from 'next/image'
 
 interface Stat {
 	value: string
@@ -16,31 +18,22 @@ interface Study {
 	name: string
 	title: string
 	stats: Stat[]
+	image: string
 }
 
 const CaseStudySection = () => {
 	const studies = useMemo<Study[]>(
 		() => [
 			{
-				company: 'Vandora community',
+				company: 'Podium',
 				quote:
-					'“It’s the first time I’ve met people who are actually moving like me—friends and dates that don’t disappear the moment I leave town.”',
-				name: 'Quin Gable',
-				title: 'Solo van-lifer',
+					'"We now know agents meet our quality bar before they ever touch a customer. That\'s the difference."',
+				name: 'Marissa Taylor',
+				title: 'Manager Product Support',
+				image: '/images/case-roadrunner.svg',
 				stats: [
-					{ value: '3×', label: 'More meetups per month' },
-					{ value: '72%', label: 'Matches with shared route intent' },
-				],
-			},
-			{
-				company: 'Beta cohort',
-				quote:
-					'“Activity matching changed everything. I found climbing partners in two days—and we’ve kept traveling together.”',
-				name: 'Community member',
-				title: 'Weekend climber',
-				stats: [
-					{ value: '48h', label: 'Average time to a meetup' },
-					{ value: '4.8★', label: 'Safety & trust rating' },
+					{ value: '50%', label: 'Faster time to quality threshold' },
+					{ value: '33%', label: 'Increase in resolution speed' },
 				],
 			},
 		],
@@ -69,23 +62,24 @@ const CaseStudySection = () => {
 	}, [])
 
 	return (
-		<section className='mx-auto max-w-[1440px] px-4 pb-24'>
-			<div className='overflow-hidden rounded-[44px] bg-primary-emeraid/18 p-8 shadow-sm md:p-12'>
+		<section id='case-studies' className='mx-auto max-w-[1440px] px-4 pb-24'>
+			<div className='overflow-hidden rounded-[44px] border border-achromatic-900/10 bg-[#ECF0EC] p-8 shadow-sm md:p-12'>
 				<div className='grid gap-10 lg:grid-cols-[520px_1fr] lg:items-start'>
-					<div className='overflow-hidden rounded-[34px] bg-achromatic-0 shadow-sm'>
-						<div
-							className='h-[360px] w-full bg-cover bg-center'
-							style={{ backgroundImage: "url('/images/case-roadrunner.svg')" }}
-						/>
+					<div className='overflow-hidden rounded-[24px] bg-[#BFE7E6] shadow-sm'>
+						<div className='relative h-[640px] w-full'>
+							<Image
+								src={active.image}
+								alt=''
+								fill
+								className='object-cover'
+							/>
+						</div>
 					</div>
 
 					<div className='min-w-0'>
 						<div className='flex items-start justify-between gap-6'>
-							<div className='text-[15px] font-medium text-achromatic-900/70'>
-								{active.company}{' '}
-								<span className='inline-block translate-y-[-1px] text-achromatic-900/60'>
-									&gt;
-								</span>
+							<div className='flex items-center gap-3'>
+								<BI width={100} fill='var(--color-achromatic-900)' />
 							</div>
 
 							<div className='flex items-center gap-3'>
@@ -130,14 +124,14 @@ const CaseStudySection = () => {
 									</div>
 
 									<div className='mt-7 flex items-center gap-4'>
-										<div className='h-12 w-12 shrink-0 rounded-full bg-achromatic-0/80 ring-1 ring-achromatic-900/10'>
-											<div className='flex h-full w-full items-center justify-center text-[14px] font-semibold text-achromatic-900/70'>
-												{active.name
-													.split(' ')
-													.slice(0, 2)
-													.map(s => s[0])
-													.join('')}
-											</div>
+										<div className='h-16 w-16 shrink-0 overflow-hidden rounded-full bg-achromatic-0/80 ring-1 ring-achromatic-900/10'>
+											<Image
+												src='https://framerusercontent.com/images/w4qd16L32tOp9zsaQJyBl4HTqFY.webp?width=64&height=64'
+												alt={active.name}
+												width={64}
+												height={64}
+												className='h-full w-full object-cover'
+											/>
 										</div>
 										<div className='min-w-0'>
 											<div className='text-[15px] font-semibold text-achromatic-900'>
@@ -150,7 +144,7 @@ const CaseStudySection = () => {
 
 										<div className='ml-auto hidden items-center gap-3 md:flex'>
 											<div className='text-[14px] font-medium text-achromatic-900'>
-												Story
+												Case study
 											</div>
 											<span className='flex h-9 w-9 items-center justify-center rounded-full bg-achromatic-900/10'>
 												<Icon
@@ -189,4 +183,3 @@ const CaseStudySection = () => {
 }
 
 export default CaseStudySection
-

@@ -3,10 +3,10 @@ import { IconNames } from '@/shared/constants/enums'
 import Marquee from '@/shared/ui/animation/Marquee'
 import GoButton from '@/shared/ui/button/GoButton'
 
-const TITLE = ['A trusted community for', 'van-lifers to connect']
+const TITLE = ['Meet people who', 'actually get van life']
 const SUBTITLE = [
-	'Date other nomads. Meet friends through shared activities.',
-	'Get trusted builder help—invite-only, with verification built in.',
+	'Dating and making friends is hard when you're always moving.',
+	'Vandora is designed for nomads—so matches are based on routes, shared activities, and intent.',
 ]
 
 const HomePageMain = () => {
@@ -46,9 +46,6 @@ const HomePageMain = () => {
 						/>
 					</div>
 				</div>
-				<div className='mx-auto mt-4 max-w-[620px] text-[13px] leading-[150%] text-achromatic-0/80'>
-					Invite-only to keep the community safe and intentional—especially for solo travelers.
-				</div>
 			</div>
 			<div className='absolute bottom-[8%] left-0 w-full'>
 				<Marquee baseVelocity={-0.4} repeatCount={2}>
@@ -56,12 +53,9 @@ const HomePageMain = () => {
 						<span>Climbing</span>
 						<span>Hiking</span>
 						<span>Skiing</span>
-						<span>Snowboarding</span>
 						<span>Surfing</span>
-						<span>Build nights</span>
-						<span>Trailheads</span>
-						<span>Campfires</span>
-						<span>Route buddies</span>
+						<span>Biking</span>
+						<span>Camping</span>
 					</div>
 				</Marquee>
 			</div>

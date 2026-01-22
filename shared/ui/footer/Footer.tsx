@@ -1,30 +1,35 @@
-import BI from '@/shared/assets/icons/logo/BI'
-
 const Footer = () => {
 	return (
 		<footer className='mx-auto max-w-[1440px] px-4 pb-16'>
 			<div className='overflow-hidden rounded-[44px] bg-primary-deepgreen px-8 pb-14 pt-16 text-achromatic-0 md:px-12'>
 				<div className='grid gap-12 lg:grid-cols-[1fr_560px] lg:items-end'>
 					<div className='min-w-0'>
-						<div className='flex items-center gap-3'>
-							<BI width={92} fill='var(--color-achromatic-0)' />
-							<div className='text-[18px] font-semibold tracking-tight'>Vandora</div>
+						<div className='text-[18px] font-semibold tracking-tight'>
+							Vandora
 						</div>
-						<p className='mt-6 max-w-[420px] text-[14px] leading-[170%] text-achromatic-0/75'>
-							A trusted, safety-first community for van-lifers to date other nomads,
-							find friends by shared activities, and get builder help on the road.
-						</p>
 					</div>
 
 					<div className='grid gap-10 sm:grid-cols-3'>
 						<div>
 							<div className='text-[12px] font-semibold tracking-[0.14em] text-achromatic-0/60'>
-								PRODUCT
+								MENU
 							</div>
 							<ul className='mt-4 space-y-2 text-[14px] text-achromatic-0/80'>
-								<li>Dating</li>
-								<li>Friends</li>
-								<li>Builder help</li>
+								<li>
+									<a href='./dating' className='hover:text-achromatic-0'>
+										Dating
+									</a>
+								</li>
+								<li>
+									<a href='./friends' className='hover:text-achromatic-0'>
+										Friends
+									</a>
+								</li>
+								<li>
+									<a href='./builder-help' className='hover:text-achromatic-0'>
+										Builder help
+									</a>
+								</li>
 							</ul>
 						</div>
 						<div>
@@ -32,9 +37,21 @@ const Footer = () => {
 								COMPANY
 							</div>
 							<ul className='mt-4 space-y-2 text-[14px] text-achromatic-0/80'>
-								<li>Safety</li>
-								<li>Terms</li>
-								<li>Privacy</li>
+								<li>
+									<a href='./help' className='hover:text-achromatic-0'>
+										Help
+									</a>
+								</li>
+								<li>
+									<a href='./terms' className='hover:text-achromatic-0'>
+										Terms
+									</a>
+								</li>
+								<li>
+									<a href='./safety' className='hover:text-achromatic-0'>
+										Safety
+									</a>
+								</li>
 							</ul>
 						</div>
 						<div>
@@ -42,9 +59,24 @@ const Footer = () => {
 								SOCIAL
 							</div>
 							<ul className='mt-4 space-y-2 text-[14px] text-achromatic-0/80'>
-								<li>Instagram</li>
-								<li>YouTube</li>
-								<li>X</li>
+								<li>
+									<a
+										href='https://x.com/vandora'
+										target='_blank'
+										rel='noopener'
+										className='hover:text-achromatic-0'>
+										X (Twitter)
+									</a>
+								</li>
+								<li>
+									<a
+										href='https://www.linkedin.com/company/vandora/'
+										target='_blank'
+										rel='noopener'
+										className='hover:text-achromatic-0'>
+										LinkedIn
+									</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -61,4 +93,3 @@ const Footer = () => {
 }
 
 export default Footer
-

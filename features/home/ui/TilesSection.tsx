@@ -1,6 +1,20 @@
 import Image from 'next/image'
+import Marquee from '@/shared/ui/animation/Marquee'
 
 const TilesSection = () => {
+	const buildItems = [
+		'Solar',
+		'Plumbing',
+		'Electrical',
+		'Insulation',
+		'Heaters',
+		'Water',
+		'Batteries',
+		'Fridges',
+		'Wiring',
+		'Vent fans',
+	]
+
 	return (
 		<section className='mx-auto max-w-[1440px] px-4 pb-24'>
 			<div className='mx-auto grid max-w-[1100px] gap-6 sm:grid-cols-2'>
@@ -19,7 +33,7 @@ const TilesSection = () => {
 					</div>
 					<p className='mt-3 text-[14px] leading-[170%] text-achromatic-900/70'>
 						Designed with the realities of life on the road: constant movement,
-						tight-knit communities, and safety that can’t be an afterthought.
+						tight-knit communities, and safety that can't be an afterthought.
 					</p>
 				</div>
 
@@ -55,18 +69,7 @@ const TilesSection = () => {
 				<div className='rounded-[34px] bg-achromatic-0 p-8 shadow-sm'>
 					<div className='mb-7 overflow-hidden rounded-[26px] bg-achromatic-900/[0.03]'>
 						<div className='flex flex-wrap items-center gap-2 p-4'>
-							{[
-								'Solar',
-								'Plumbing',
-								'Electrical',
-								'Insulation',
-								'Heaters',
-								'Water',
-								'Batteries',
-								'Fridges',
-								'Wiring',
-								'Vent fans',
-							].map((name) => (
+							{buildItems.map((name) => (
 								<div
 									key={name}
 									className='flex items-center gap-2 rounded-full bg-achromatic-0 px-3 py-2 text-[12px] text-achromatic-900/70 shadow-[0_1px_0_rgba(14,34,14,0.06)]'>
@@ -94,4 +97,3 @@ const TilesSection = () => {
 }
 
 export default TilesSection
-
