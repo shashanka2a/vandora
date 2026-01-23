@@ -9,6 +9,9 @@ export const metadata: Metadata = {
 	title: 'Vandora | A trusted community for van-lifers',
 	description:
 		'Vandora is an invite-only, safety-first community for van-lifers to date other nomads, find friends by shared activities, and get trusted builder help for van projects.',
+	icons: {
+		icon: '/images/vandora-icon.svg',
+	},
 }
 
 interface RootLayoutProps {
