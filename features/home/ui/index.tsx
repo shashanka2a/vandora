@@ -1,6 +1,3 @@
-import Icon from '@/shared/assets/icons'
-import { IconNames } from '@/shared/constants/enums'
-import GoButton from '@/shared/ui/button/GoButton'
 import Image from 'next/image'
 
 const TITLE = ['Meet people who', 'actually get van life']
@@ -11,7 +8,7 @@ const SUBTITLE = [
 
 const HomePageMain = () => {
 	return (
-		<div className='h-[85vh] relative overflow-hidden w-full'>
+		<div className='h-[100dvh] relative overflow-hidden w-full'>
 			{/* Hero Illustration */}
 			<div className='absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none'>
 				<div className='relative w-full h-full'>
@@ -24,40 +21,17 @@ const HomePageMain = () => {
 					/>
 				</div>
 			</div>
-			<div className='text-achromatic-0 xy-center absolute text-center z-10 px-4 w-full max-w-[1000px] left-1/2 -translate-x-1/2'>
-				<div className='mb-3 text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] leading-[110%] font-bold tracking-tight drop-shadow-lg'>
+			{/* Text Content - Positioned between sun and van */}
+			<div className='text-achromatic-0 absolute text-center z-10 px-4 w-full max-w-[1000px] left-1/2 -translate-x-1/2 pt-32 md:pt-32 top-[15%] md:top-[20%]'>
+				<div className='mb-4 md:mb-5 text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] leading-[110%] font-extrabold tracking-tight'>
 					{TITLE.map((title, idx) => (
 						<h1 key={idx} className='drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]'>{title}</h1>
 					))}
 				</div>
-				<div className='text-[14px] sm:text-[16px] md:text-[18px] lg:text-[19px] leading-[130%] tracking-[-0.02em] drop-shadow-md'>
+				<div className='text-[15px] sm:text-[16px] md:text-[18px] lg:text-[19px] leading-[140%] md:leading-[130%] tracking-[-0.02em] font-medium'>
 					{SUBTITLE.map((subtitle, idx) => (
 						<p key={idx} className='drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]'>{subtitle}</p>
 					))}
-				</div>
-				<div className='mt-12 flex justify-center'>
-					<div className='bg-achromatic-0 flex items-center rounded-2xl p-1 max-w-[600px] w-full mx-4 shadow-xl'>
-						<div className='px-3 flex-shrink-0'>
-							<Icon
-								name={IconNames.MAIL}
-								width={24}
-								height={24}
-								fill='var(--color-achromatic-300)'
-							/>
-						</div>
-						<input
-							name='email'
-							type='text'
-							placeholder='Email address (request an invite)'
-							className='flex-1 min-w-0 border-none bg-transparent outline-none text-achromatic-900 placeholder:text-achromatic-300'
-						/>
-						<GoButton
-							className='bg-primary-saffron flex-shrink-0 mr-1'
-							label='Request invite'
-							labelColor='var(--color-achromatic-900)'
-							labelClassName='whitespace-nowrap'
-						/>
-					</div>
 				</div>
 			</div>
 		</div>

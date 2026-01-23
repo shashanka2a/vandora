@@ -1,4 +1,7 @@
+'use client'
+
 import type { ReactNode } from 'react'
+import { motion } from 'framer-motion'
 
 interface Card {
 	eyebrow: string
@@ -21,17 +24,30 @@ const CloseLoopSection = () => {
 					<div className='absolute -top-12 left-10 h-[220px] w-[220px] rounded-full bg-primary-saffron/35 blur-2xl' />
 					<div className='absolute -bottom-12 right-10 h-[220px] w-[220px] rounded-full bg-primary-emeraid/22 blur-2xl' />
 					<div className='absolute inset-0 p-5'>
-						<div className='flex items-center justify-between rounded-2xl bg-achromatic-0 px-4 py-3 shadow-[0_1px_0_rgba(14,34,14,0.06)]'>
-							<div className='text-[14px] font-medium text-achromatic-900'>
-								Route match
-							</div>
-							<div className='rounded-full bg-achromatic-900/8 px-3 py-1 text-[12px] font-medium text-achromatic-900/70'>
-								92% overlap
-							</div>
+						<div className='text-[14px] font-semibold text-achromatic-900'>
+							Route match
 						</div>
-						<div className='mt-4 grid gap-3'>
-							<div className='h-10 rounded-2xl bg-achromatic-900/5' />
-							<div className='h-10 rounded-2xl bg-achromatic-900/5' />
+						<div className='mt-4 space-y-3'>
+							<motion.div
+								className='flex items-center justify-between rounded-2xl bg-achromatic-0 px-4 py-3 shadow-[0_1px_0_rgba(14,34,14,0.06)] cursor-pointer'
+								whileHover={{ scale: 1.02, y: -1 }}
+								transition={{ duration: 0.2 }}>
+								<div className='flex items-center gap-2 text-[13px] font-medium text-achromatic-900'>
+									<span className='text-base'>🚗</span>
+									Travel pace match
+								</div>
+								<div className='text-[12px] text-achromatic-900/60'>Similar</div>
+							</motion.div>
+							<motion.div
+								className='flex items-center justify-between rounded-2xl bg-achromatic-0 px-4 py-3 shadow-[0_1px_0_rgba(14,34,14,0.06)] cursor-pointer'
+								whileHover={{ scale: 1.02, y: -1 }}
+								transition={{ duration: 0.2 }}>
+								<div className='flex items-center gap-2 text-[13px] font-medium text-achromatic-900'>
+									<span className='text-base'>🌸</span>
+									Season alignment
+								</div>
+								<div className='text-[12px] text-achromatic-900/60'>Spring</div>
+							</motion.div>
 						</div>
 					</div>
 				</div>
@@ -52,18 +68,26 @@ const CloseLoopSection = () => {
 							Upcoming
 						</div>
 						<div className='mt-4 space-y-3'>
-							<div className='flex items-center justify-between rounded-2xl bg-achromatic-0 px-4 py-3 shadow-[0_1px_0_rgba(14,34,14,0.06)]'>
-								<div className='text-[13px] font-medium text-achromatic-900'>
+							<motion.div
+								className='flex items-center justify-between rounded-2xl bg-achromatic-0 px-4 py-3 shadow-[0_1px_0_rgba(14,34,14,0.06)] cursor-pointer'
+								whileHover={{ scale: 1.02, y: -1 }}
+								transition={{ duration: 0.2 }}>
+								<div className='flex items-center gap-2 text-[13px] font-medium text-achromatic-900'>
+									<span className='text-base'>🥾</span>
 									Hike - sunrise loop
 								</div>
 								<div className='text-[12px] text-achromatic-900/60'>Tomorrow</div>
-							</div>
-							<div className='flex items-center justify-between rounded-2xl bg-achromatic-0 px-4 py-3 shadow-[0_1px_0_rgba(14,34,14,0.06)]'>
-								<div className='text-[13px] font-medium text-achromatic-900'>
+							</motion.div>
+							<motion.div
+								className='flex items-center justify-between rounded-2xl bg-achromatic-0 px-4 py-3 shadow-[0_1px_0_rgba(14,34,14,0.06)] cursor-pointer'
+								whileHover={{ scale: 1.02, y: -1 }}
+								transition={{ duration: 0.2 }}>
+								<div className='flex items-center gap-2 text-[13px] font-medium text-achromatic-900'>
+									<span className='text-base'>🧗</span>
 									Climb - boulders
 								</div>
 								<div className='text-[12px] text-achromatic-900/60'>This weekend</div>
-							</div>
+							</motion.div>
 						</div>
 					</div>
 				</div>
@@ -88,9 +112,27 @@ const CloseLoopSection = () => {
 								Verified
 							</div>
 						</div>
-						<div className='mt-4 grid gap-3'>
-							<div className='h-10 rounded-2xl bg-achromatic-900/5' />
-							<div className='h-10 rounded-2xl bg-achromatic-900/5' />
+						<div className='mt-4 space-y-3'>
+							<motion.div
+								className='flex items-center justify-between rounded-2xl bg-achromatic-0 px-4 py-3 shadow-[0_1px_0_rgba(14,34,14,0.06)] cursor-pointer'
+								whileHover={{ scale: 1.02, y: -1 }}
+								transition={{ duration: 0.2 }}>
+								<div className='flex items-center gap-2 text-[13px] font-medium text-achromatic-900'>
+									<span className='text-base'>⚡</span>
+									Electrical system
+								</div>
+								<div className='text-[12px] text-achromatic-900/60'>Available</div>
+							</motion.div>
+							<motion.div
+								className='flex items-center justify-between rounded-2xl bg-achromatic-0 px-4 py-3 shadow-[0_1px_0_rgba(14,34,14,0.06)] cursor-pointer'
+								whileHover={{ scale: 1.02, y: -1 }}
+								transition={{ duration: 0.2 }}>
+								<div className='flex items-center gap-2 text-[13px] font-medium text-achromatic-900'>
+									<span className='text-base'>☀️</span>
+									Solar setup
+								</div>
+								<div className='text-[12px] text-achromatic-900/60'>Available</div>
+							</motion.div>
 						</div>
 					</div>
 				</div>
