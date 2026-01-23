@@ -22,7 +22,7 @@ const HomePageMain = () => {
 				</div>
 			</div>
 			{/* Text Content - Positioned between sun and van */}
-			<div className='text-achromatic-0 absolute text-center z-10 px-4 w-full max-w-[1000px] left-1/2 -translate-x-1/2 pt-32 md:pt-32 top-[15%] md:top-[20%]'>
+			<div className='text-achromatic-0 absolute text-center z-10 px-4 w-full max-w-[1000px] left-1/2 -translate-x-1/2 pt-32 md:pt-32 top-[15%] md:top-[12%]'>
 				<div className='mb-4 md:mb-5 text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] leading-[110%] font-extrabold tracking-tight'>
 					{TITLE.map((title, idx) => (
 						<h1 key={idx} className='drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]'>{title}</h1>
