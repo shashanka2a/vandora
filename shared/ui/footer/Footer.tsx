@@ -1,26 +1,15 @@
-import Image from 'next/image'
-
 const Footer = () => {
 	return (
-		<footer className='mx-auto max-w-[1440px] px-4 pb-2'>
-			<div className='overflow-hidden rounded-t-[44px] bg-primary-deepgreen px-4 pb-12 pt-10 text-achromatic-0 md:px-12 md:pb-14 md:pt-14'>
-				<div className='grid gap-6 md:gap-8 lg:grid-cols-[auto_1fr] lg:items-start lg:gap-16'>
+		<footer className='mx-auto max-w-[1440px] px-3 pb-2 md:px-4'>
+			<div className='overflow-hidden rounded-t-[44px] bg-primary-deepgreen px-5 pb-10 pt-10 text-achromatic-0 md:px-10 md:pb-14 md:pt-14'>
+				<div className='grid gap-8 md:gap-10 lg:grid-cols-[1fr_560px] lg:items-start'>
 					<div className='min-w-0'>
-						<div className='flex items-center gap-2 md:gap-3 mb-2'>
-							<Image
-								src='/images/vandora-icon.svg'
-								alt='Vandora logo'
-								width={32}
-								height={32}
-								className='brightness-0 invert opacity-90'
-							/>
-						</div>
-						<div className='text-[16px] md:text-[18px] font-semibold tracking-tight'>
+						<div className='text-[18px] md:text-[20px] lg:text-[24px] font-semibold tracking-tight'>
 							Vandora
 						</div>
 					</div>
 
-					<div className='grid grid-cols-3 gap-4 sm:gap-8 md:gap-10'>
+					<div className='grid grid-cols-3 gap-5 sm:gap-8 md:gap-10 lg:gap-12'>
 						<div>
 							<div className='text-[11px] md:text-[12px] font-semibold tracking-[0.14em] text-achromatic-0/60'>
 								MENU
@@ -93,7 +82,7 @@ const Footer = () => {
 					</div>
 				</div>
 
-				<div className='mt-6 md:mt-12 flex flex-col items-start justify-between gap-4 md:gap-6 border-t border-achromatic-0/12 pt-6 md:pt-8 md:flex-row md:items-center'>
+				<div className='mt-8 md:mt-10 flex flex-col items-start justify-between gap-4 md:gap-6 border-t border-achromatic-0/12 pt-6 md:pt-8 md:flex-row md:items-center'>
 					<div className='text-[11px] md:text-[12px] text-achromatic-0/55'>
 						© {new Date().getFullYear()} VANDORA. ALL RIGHTS RESERVED.
 					</div>
