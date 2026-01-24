@@ -141,8 +141,8 @@ const CloseLoopSection = () => {
 	]
 
 	return (
-		<section id='contents' className='mx-auto max-w-[1440px] px-4 pb-24 pt-20'>
-			<div className='mx-auto max-w-[1000px] text-center'>
+		<section id='contents' className='w-full pb-24 pt-20'>
+			<div className='mx-auto max-w-[1000px] px-4 text-center'>
 				<h2 className='text-balance text-[32px] leading-[112%] font-semibold tracking-tight text-achromatic-900 md:text-[40px]'>
 					Turn your travel plans into real connections
 				</h2>
@@ -152,7 +152,7 @@ const CloseLoopSection = () => {
 				</p>
 			</div>
 
-			<div className='mx-auto mt-14 max-w-[1100px]'>
+			<div className='mx-auto mt-14 max-w-[1100px] px-4'>
 				<div className='grid gap-6 md:grid-cols-3'>
 					{cards.map((card) => (
 						<div
