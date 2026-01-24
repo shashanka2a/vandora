@@ -1,8 +1,9 @@
 const Footer = () => {
 	return (
-		<footer className='mx-auto max-w-[1440px] px-3 pb-2 md:px-4'>
-			<div className='overflow-hidden rounded-t-[44px] bg-primary-deepgreen px-5 pb-10 pt-10 text-achromatic-0 md:px-10 md:pb-14 md:pt-14'>
-				<div className='grid gap-8 md:gap-10 lg:grid-cols-[1fr_560px] lg:items-start'>
+		<footer className='w-full'>
+			<div className='overflow-hidden rounded-t-[44px] bg-primary-deepgreen'>
+				<div className='mx-auto max-w-[1440px] px-5 pb-10 pt-10 text-achromatic-0 md:px-10 md:pb-14 md:pt-14'>
+					<div className='grid gap-8 md:gap-10 lg:grid-cols-[1fr_560px] lg:items-start'>
 					<div className='min-w-0'>
 						<div className='text-[18px] md:text-[20px] lg:text-[24px] font-semibold tracking-tight'>
 							Vandora
@@ -80,11 +81,12 @@ const Footer = () => {
 							</ul>
 						</div>
 					</div>
-				</div>
+					</div>
 
-				<div className='mt-8 md:mt-10 flex flex-col items-start justify-between gap-4 md:gap-6 border-t border-achromatic-0/12 pt-6 md:pt-8 md:flex-row md:items-center'>
-					<div className='text-[11px] md:text-[12px] text-achromatic-0/55'>
-						© {new Date().getFullYear()} VANDORA. ALL RIGHTS RESERVED.
+					<div className='mt-8 md:mt-10 flex flex-col items-start justify-between gap-4 md:gap-6 border-t border-achromatic-0/12 pt-6 md:pt-8 md:flex-row md:items-center'>
+						<div className='text-[11px] md:text-[12px] text-achromatic-0/55'>
+							© {new Date().getFullYear()} VANDORA. ALL RIGHTS RESERVED.
+						</div>
 					</div>
 				</div>
 			</div>
